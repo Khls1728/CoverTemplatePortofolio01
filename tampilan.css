@@ -1,0 +1,221 @@
+/* Reset dan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  width: 100%;
+}
+
+/* Layout kontainer penuh */
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* Header / Hero */
+.hero {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 40px 15px;
+  border-bottom: 5px solid #444;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.hero .text {
+  text-align: center;
+}
+
+.hero .text h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.hero .text p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00bcd4;
+}
+
+/* Navigasi sederhana */
+.simple-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.simple-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.simple-nav a:hover {
+  color: #00bcd4;
+}
+
+/* Section umum */
+.section-title {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 1.8em;
+  color: #222;
+}
+
+.section-text {
+  text-align: justify;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Pengalaman */
+.experience {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-left: 4px solid #00bcd4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.experience h3 {
+  margin-bottom: 5px;
+}
+
+.experience span {
+  font-size: 0.9em;
+  color: gray;
+}
+
+/* Portofolio */
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0 20px 40px;
+}
+
+.portfolio-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.portfolio-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.portfolio-card h4 {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #222;
+}
+
+.portfolio-card p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #1c1c1c;
+  color: #eee;
+  text-align: center;
+  padding: 30px 15px;
+  margin-top: 40px;
+  border-top: 5px solid #444;
+}
+
+footer a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+footer i {
+  margin-right: 10px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    margin-bottom: 15px;
+  }
+
+  .simple-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .simple-nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
